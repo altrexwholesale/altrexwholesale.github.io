@@ -1,135 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Altrex Wholesale Ltd</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f6f9;
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background: #0a3d62;
-            color: #fff;
-            padding: 30px;
-            text-align: center;
-        }
-        section {
-            padding: 40px;
-            max-width: 1100px;
-            margin: auto;
-        }
-        h2 {
-            color: #0a3d62;
-        }
-        .box {
-            background: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-left: 5px solid #1e90ff;
-        }
-        footer {
-            background: #0a3d62;
-            color: #fff;
-            text-align: center;
-            padding: 25px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Altrex Wholesale Ltd</title>
+<style>
+    body { font-family: Arial, sans-serif; margin:0; background-color:#f4f6f9; color:#333; line-height:1.6; }
+    header { background-color:#0a3d62; color:#fff; padding:30px 20px; text-align:center; position:relative; }
+    header h1 { margin:0; }
+    nav { margin-top:15px; }
+    nav a { color:#fff; margin:0 15px; text-decoration:none; font-weight:bold; transition: color 0.3s; }
+    nav a:hover { color:#1e90ff; }
+    .language-selector { position:absolute; top:15px; right:20px; background:#fff; color:#0a3d62; border-radius:5px; padding:5px; }
+    .language-selector select { border:none; background:transparent; font-weight:bold; color:#0a3d62; }
+    section { padding:50px 20px; max-width:1100px; margin:auto; }
+    h2 { color:#0a3d62; margin-bottom:30px; }
+    .card { background:#fff; border-left:6px solid #1e90ff; padding:20px; margin-bottom:25px; box-shadow:0 4px 8px rgba(0,0,0,0.1); border-radius:5px; }
+    .card h3 { margin-top:0; color:#0a3d62; }
+    .card img { width:100%; max-width:400px; border-radius:5px; margin-top:15px; }
+    .cta-button { display:inline-block; padding:12px 25px; background-color:#1e90ff; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; margin-top:15px; }
+    .cta-button:hover { background-color:#0a3d62; }
+    footer { background-color:#0a3d62; color:#fff; text-align:center; padding:25px 20px; margin-top:50px; }
+    ul li { margin-bottom:10px; }
+    @media(max-width:768px){ nav a{ display:block; margin:8px 0; } }
+    .catalog { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+    .catalog .card { flex:1 1 300px; }
+</style>
 </head>
 <body>
 
 <header>
     <h1>Altrex Wholesale Ltd</h1>
     <p>Electrical, Electronic & Heavy Industrial Machinery Wholesale</p>
+    <div class="language-selector">
+        <select>
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+            <option value="de">Deutsch</option>
+        </select>
+    </div>
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#machinery">Machinery Catalog</a>
+        <a href="#operations">Operations</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<section>
+<section id="overview">
     <h2>Company Overview</h2>
     <p>
-        Altrex Wholesale Ltd is engaged in the wholesale procurement and
-        distribution of electrical goods, electronic and telecommunications
-        equipment, industrial machinery, and heavy manufacturing systems.
-        The company purchases machinery and equipment from manufacturers and
-        authorized suppliers and distributes them to multiple domestic and
-        international locations on a wholesale and project-based basis.
+        Altrex Wholesale Ltd specializes in the procurement and wholesale distribution of electrical, electronic, and industrial machinery. We source large-scale machinery and supply to domestic and international locations, providing professional project-based solutions for businesses in textiles, manufacturing, and heavy industry.
     </p>
 </section>
 
-<section>
-    <h2>Business Activities</h2>
+<section id="machinery">
+    <h2>Machinery Catalog</h2>
+    <div class="catalog">
 
-    <div class="box">
-        <strong>46439</strong> – Wholesale of radio, television goods and
-        electrical household appliances (excluding records, tapes, CDs, video
-        tapes and playback equipment).
-    </div>
+        <div class="card">
+            <h3>Spinning Mill Machines</h3>
+            <img src="https://via.placeholder.com/400x250?text=Spinning+Mill+Machine" alt="Spinning Mill Machine">
+            <p>Complete spinning mill systems including blow room lines, carding machines, drawing frames, roving frames, and ring spinning machines for large-scale textile production.</p>
+            <a href="#contact" class="cta-button">Request a Quote</a>
+        </div>
 
-    <div class="box">
-        <strong>46520</strong> – Wholesale of electronic and telecommunications
-        equipment and parts.
-    </div>
+        <div class="card">
+            <h3>Textile Manufacturing Machines</h3>
+            <img src="https://via.placeholder.com/400x250?text=Textile+Machine" alt="Textile Machine">
+            <p>Industrial weaving, knitting, dyeing, finishing, and fabric processing machinery for commercial textile plants.</p>
+            <a href="#contact" class="cta-button">Request a Quote</a>
+        </div>
 
-    <div class="box">
-        <strong>46690</strong> – Wholesale of industrial machinery and equipment,
-        including high-value manufacturing systems.
-    </div>
+        <div class="card">
+            <h3>Moulding & Forming Machines</h3>
+            <img src="https://via.placeholder.com/400x250?text=Moulding+Machine" alt="Moulding Machine">
+            <p>Injection moulding, blow moulding, compression moulding, and custom forming machines for plastics and industrial components.</p>
+            <a href="#contact" class="cta-button">Request a Quote</a>
+        </div>
 
-    <div class="box">
-        <strong>46740</strong> – Wholesale of hardware, plumbing and heating
-        equipment and supplies.
-    </div>
-</section>
+        <div class="card">
+            <h3>Project-Based Machinery Supply</h3>
+            <img src="https://via.placeholder.com/400x250?text=Project+Machinery" alt="Project Machinery">
+            <p>Custom sourcing and wholesale supply of large-scale machinery based on technical specifications, production capacity, and delivery requirements.</p>
+            <a href="#contact" class="cta-button">Request a Quote</a>
+        </div>
 
-<section>
-    <h2>Heavy Industrial Machinery</h2>
-
-    <div class="box">
-        <strong>Spinning Mill Machinery</strong><br>
-        Complete spinning mill solutions including blow room lines, carding
-        machines, drawing frames, roving frames, ring spinning systems and
-        compact spinning equipment for large-scale textile plants.
-    </div>
-
-    <div class="box">
-        <strong>Textile Manufacturing Machinery</strong><br>
-        Industrial weaving, knitting, dyeing, finishing and fabric processing
-        machinery for commercial textile manufacturing operations.
-    </div>
-
-    <div class="box">
-        <strong>Moulding & Forming Machines</strong><br>
-        Injection moulding, blow moulding, compression moulding and custom
-        forming machines for plastic and industrial component manufacturing.
-    </div>
-
-    <div class="box">
-        <strong>Project-Based Machinery Supply</strong><br>
-        Custom sourcing and wholesale supply of large-scale machinery based on
-        technical specifications, production capacity and delivery location.
     </div>
 </section>
 
-<section>
+<section id="operations">
     <h2>Operations & Supply Chain</h2>
     <ul>
         <li>Procurement from certified manufacturers and authorized suppliers</li>
         <li>Wholesale and bulk purchasing</li>
-        <li>Coordination of warehousing and inventory</li>
-        <li>Domestic and international logistics management</li>
+        <li>Warehousing and inventory management</li>
+        <li>Domestic and international logistics and delivery</li>
         <li>Distribution to multiple business and project locations</li>
     </ul>
 </section>
 
-<section>
+<section id="contact">
     <h2>Contact Information</h2>
     <p>
         Email: altrexwholesaleltd@hotmail.com<br>
         Address: Fairlight Avenue, Telscombe Cliffs, Peacehaven, England, BN10 7BN
     </p>
+    <p>For business inquiries or machinery quotes, please click on the “Request a Quote” button above or email us directly.</p>
 </section>
 
 <footer>
